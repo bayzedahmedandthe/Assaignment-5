@@ -31,7 +31,7 @@
         <nav>
             <div class="bg-violet-100 ">
                 <nav class=" flex lg:justify-between mx-14 lg:mx-auto lg:max-w-6xl  items-center  py-8">
-                    <button id="btn-home" class="font-bold bg-lime-300 rounded-lg py-3 px-8 ">Home</button>
+                    <button id="btn-home" class="font-bold bg-lime-400 rounded-lg py-3 px-8 ">Home</button>
                     <!-- responsive site added bars start -->
                     <i class="fa-solid fa-bars lg:hidden pl-48"></i>
                     <!-- responsive site added bars end -->
@@ -46,28 +46,26 @@
                 </nav>
             </div>
         </nav>
-        <div class="flex justify-center gap-6  py-20 mx-auto">
-            <button class="font-bold bg-lime-300 rounded-lg py-4 px-8 ">Donation</button>
-            <button class="border-2 py-4 px-8 rounded-lg">History</button>
-        </div>
+       
     </header>
     <main>
-        <h2 class="font-bold text-4xl pl-20">Important FAQ
+     <section id="section-faq">
+        <h2 class="font-bold text-4xl pl-20 pt-20">Important FAQ
             <i class="fa-solid fa-question"></i>
         </h2>
         <div class="my-14 w-[90%] mx-auto">
-            <div class="collapse collapse-arrow bg-base-200 border border-gray-300">
+            <div class="collapse collapse-arrow  border border-gray-300">
                 <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-title text-xl font-medium py-8">What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
                     <p>The Document Object Model is a programming API for documents. The object model itself closely
                         resembles the structure of the documents it models. For instance, consider this table, taken
                         from an HTML document.</p>
                 </div>
             </div>
-            <div class="collapse collapse-arrow bg-base-200 border border-gray-300 ">
+            <div class="collapse collapse-arrow  border border-gray-300 ">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How do you select an element from DOM?</div>
+                <div class="collapse-title text-xl font-medium py-8">How do you select an element from DOM?</div>
                 <div class="collapse-content">
                     <p>Choosing the right DOM elements with JavaScript is essential for creating dynamic and interactive
                         web pages. The DOM, or Document Object Model, is a representation of the HTML structure of a web
@@ -76,26 +74,33 @@
                         by ID, by class, by tag name, and by query selector.</p>
                 </div>
             </div>
-            <div class="collapse collapse-arrow bg-base-200 border border-gray-300">
+            <div class="collapse collapse-arrow  border border-gray-300">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                <div class="collapse-title text-xl font-medium py-8">What is event delegation in the context of the DOM, and
                     why is it useful?</div>
                 <div class="collapse-content">
                     <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at
                         a higher level in the DOM than the element on which the event originated. It allows us to attach
                         a single event listener for elements that exist now or in the future.</p>
                 </div>
-                <div class="collapse collapse-arrow bg-base-200 border border-gray-300">
-                    <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and
-                        styles usings the DOM?</div>
-                    <div class="collapse-content">
-                        <p>If I want to change other attributes like id , href , or src , you can use the setAttribute()
-                            method. The setAttribute() method accepts two arguments: The name of the attribute to set.
-                            The value of the attribute to set.</p>
-                    </div>
+             
+            </div>
+            <div class="collapse collapse-arrow  border border-gray-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium py-8">How do you manipulate an element's attributes and
+                    styles usings the DOM?</div>
+                <div class="collapse-content">
+                    <p>If I want to change other attributes like id , href , or src , you can use the setAttribute()
+                        method. The setAttribute() method accepts two arguments: The name of the attribute to set.
+                        The value of the attribute to set.</p>
                 </div>
             </div>
+        </section>
+          <!-- history section start -->
+          <section id="section-history" class="hidden">
+
+          </section>
+          <!-- history section end -->
     </main>
     <script src="./js/index.js"></script>
     <script src="./js/blog.js"></script>
