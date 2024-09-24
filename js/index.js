@@ -5,11 +5,10 @@ document.getElementById('btn-blog').addEventListener('click', function(){
 
 // btn history function start
 document.getElementById('btn-history').addEventListener('click', function(){
-   const sectionHistory = document.getElementById('section-history');
-   const sectionDonation = document.getElementById('section-donation');
-   const btnDonation = document.getElementById('btn-donation');
-   const btnHistory = document.getElementById('btn-history');
-   const footer = document.getElementById('footer');
+   const sectionHistory = getButtonById('section-history');
+   const sectionDonation = getButtonById('section-donation');
+   const btnDonation = getButtonById('btn-donation');
+   const btnHistory = getButtonById('btn-history');
    sectionHistory.classList.remove('hidden',);
    sectionDonation.classList.add('hidden',);
    btnHistory.classList.add('bg-lime-400');
@@ -42,8 +41,8 @@ document.getElementById('btn-history').addEventListener('click', function(){
 document.getElementById('btn-donation').addEventListener('click', function(){
    const sectionHistory = document.getElementById('section-history');
    const sectionDonation = document.getElementById('section-donation');
-   const btnDonation = document.getElementById('btn-donation');
-   const btnHistory = document.getElementById('btn-history')
+   const btnDonation = getButtonById('btn-donation');
+   const btnHistory = getButtonById('btn-history')
    sectionDonation.classList.remove('hidden');
    sectionHistory.classList.add('hidden');
    btnHistory.classList.remove('bg-lime-400')
@@ -56,7 +55,7 @@ document.getElementById('firest-card-container-donate-btn').addEventListener('cl
    const modal = document.getElementById('my_modal_1');
    modal.showModal();
    const firestCardContainerInputField = getInputFieldById('firest-card-container-input-field');
-   console.log(typeof firestCardContainerInputField);
+
 const firestcardContainerDonatedBalance = getElementInnerTextById('firest-card-donated-amount');
 const mainBalance = getElementInnerTextById('main-balance');
 if(!isNaN(firestCardContainerInputField) && firestCardContainerInputField > 0){
