@@ -61,7 +61,7 @@ document.getElementById('firest-card-container-donate-btn').addEventListener('cl
 const firestcardContainerDonatedBalance = getElementInnerTextById('firest-card-donated-amount');
 const mainBalance = getElementInnerTextById('main-balance');
 
-if(!isNaN(firestCardContainerInputField)  && mainBalance > firestCardContainerInputField ){
+if(!isNaN(firestCardContainerInputField)  && mainBalance > firestCardContainerInputField && firestCardContainerInputField > 0){
    const donatedBalance = firestCardContainerInputField + firestcardContainerDonatedBalance;
 const newMainBalance = mainBalance - firestCardContainerInputField;
 document.getElementById('main-balance').innerText = newMainBalance;
@@ -82,7 +82,7 @@ document.getElementById('secend-card-container-donate-btn').addEventListener('cl
    const secendCardContainerDonatedBalance = getElementInnerTextById('secend-card-donated-amount');
    const mainBalance = getElementInnerTextById('main-balance');
 
-if(!isNaN(secendCardContainerInputField) && mainBalance > secendCardContainerInputField ){
+if(!isNaN(secendCardContainerInputField) && mainBalance > secendCardContainerInputField && secendCardContainerInputField > 0){
    const donatedBalance = secendCardContainerInputField + secendCardContainerDonatedBalance;
    const newMainBalance = mainBalance - secendCardContainerInputField;
    document.getElementById('main-balance').innerText = newMainBalance;
@@ -104,7 +104,7 @@ document.getElementById('third-card-container-donate-btn').addEventListener('cli
    const thirdCardContainerDonatedBalance = getElementInnerTextById('third-card-donated-amount');
    const mainBalance = getElementInnerTextById('main-balance');
 
-if(!isNaN(thirdCardContainerInputField) && mainBalance > thirdCardContainerInputField ){
+if(!isNaN(thirdCardContainerInputField) && mainBalance > thirdCardContainerInputField && thirdCardContainerInputField > 0){
    const donatedBalance = thirdCardContainerInputField + thirdCardContainerDonatedBalance;
    const newMainBalance = mainBalance -thirdCardContainerInputField;
    document.getElementById('main-balance').innerText = newMainBalance;
